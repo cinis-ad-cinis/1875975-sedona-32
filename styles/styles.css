@@ -1,0 +1,22 @@
+
+.first-screen {
+  background-color: #ADD8E6;
+  background-image: url("../img/index-background.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.subscribe {
+  background-color: #87CEEB;
+  background-image: url("../img/subscribe-background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.catalog-background {
+  background-color: #87CEEB;
+  background-image: url("../img/catalog-background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
