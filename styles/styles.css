@@ -14,7 +14,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -28,7 +36,7 @@ body {
   line-height: 21px;
   font-weight: 700;
   text-align: center;
-  color:#ffffff;
+  color: #ffffff;
   background-color: #756257;
   text-decoration: none;
   text-transform: uppercase;
@@ -36,11 +44,27 @@ body {
   border-radius: 4px;
 }
 
-.main-nav-list{
-  list-style: none;
+.page-container {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: 0 auto;
 }
 
-.main-nav-link{
+.main-nav {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 531px;
+}
+
+.main-nav-link {
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -49,20 +73,36 @@ body {
   text-decoration: none;
 }
 
+.logo {
+  margin: 0 auto;
+}
+
+.navigation-user {
+  display: flex;
+  width: 531px;
+  justify-content: space-around;
+}
+
 .main-nav-link.button {
   font-size: 16px;
   line-height: 21px;
-  color:#ffffff;
+  color: #ffffff;
   background-color: #756257;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
 .first-screen {
-  background-color: #ADD8E6;
+  width: 1200px;
+  background-color: #add8e6;
   background-image: url("../img/index-background.jpeg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   text-align: center;
 }
+
 .features {
   text-align: center;
 }
@@ -78,18 +118,38 @@ body {
   line-height: 36px;
 }
 
-.features-list {
-  list-style: none;
-}
-
+.features-list,
 .arguments-list {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+}
+
+.features-item-photo {
+  display: flex;
+}
+
+.photo-reverse {
+  flex-direction: row-reverse;
+}
+
+.features-item-text {
+  width: 400px;
+  margin: auto;
+}
+
+.arguments-item,
+.without-photo {
+  width: 400px;
 }
 
 .features-item:first-of-type,
 .features-item:nth-of-type(3) {
   color: #ffffff;
-  background-color: #83B3D3;
+  background-color: #83b3d3;
 }
 
 .features-item:nth-of-type(4),
@@ -132,9 +192,9 @@ body {
 }
 
 .subscribe {
-  color: #ffffff;
-  background-color: #87CEEB;
   text-align: center;
+  color: #ffffff;
+  background-color: #87ceeb;
   background-image: url("../img/subscribe-background.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -151,29 +211,47 @@ body {
   font-size: 22px;
   line-height: 26px;
 }
+
 .subscribe-button {
   font-size: 20px;
   line-height: 26px;
-  background-color: #83B3D3;
-  border-radius: 0px 10px 10px 0px;
+  background-color: #83b3d3;
+  border-radius: 0 10px 10px 0;
+}
+
+.page-footer-container {
+  display: flex;
+  width: 1200px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.footer-social-list {
+  width: 240px;
 }
 
 .footer-phone {
+  width: 720px;
   font-size: 40px;
   line-height: 40px;
+  text-align: center;
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
 }
 
+.academy-logo {
+  width: 240px;
+}
 /*Каталог*/
 
 .catalog-background {
-  background-color: #87CEEB;
+  color: #ffffff;
+  background-color: #87ceeb;
   background-image: url("../img/catalog-background.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  color: #ffffff;
 }
 
 .inner-header-title {
@@ -182,7 +260,7 @@ body {
   font-weight: 700;
 }
 
-.breadcrumbs{
+.breadcrumbs {
   list-style: none;
 }
 
@@ -205,7 +283,7 @@ body {
 }
 
 .button-submit {
-  background-color: #83B3D3;
+  background-color: #83b3d3;
 }
 
 .button-reset {
@@ -242,7 +320,7 @@ body {
 }
 
 .hotels-card-favourites {
-  background-color: #83B3D3;
+  background-color: #83b3d3;
 }
 
 .hotels-card-raiting {
@@ -251,13 +329,13 @@ body {
 }
 
 .hotels-card-favourites-add {
-  background-color: #7DB54F;
+  background-color: #7db54f;
 }
 
 .show-more-button {
   font-size: 20px;
   line-height: 26px;
-  background-color: #83B3D3;
+  background-color: #83b3d3;
 }
 
 .pagination {
@@ -269,13 +347,13 @@ body {
   line-height: 26px;
   font-weight: 700;
   color: #ffffff;
-  background-color: #83B3D3;
+  background-color: #83b3d3;
   text-decoration: none;
 }
 
 .pagination-link-current {
-color: #000000;
-background-color: #F2F2F2;
+  color: #000000;
+  background-color: #f2f2f2;
 }
 
 .cards-on-page-title {
