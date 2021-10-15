@@ -145,7 +145,7 @@
               <form class="sorting-type">
                 <label class="visually-hidden" for="sorting">Сортировка.</label>
                 <select class="select-control" id="sorting" name="sorting">
-                  <option value="cheap" selected>Сначала дешевые</option>
+                  <option value="cheap" selected>Сначала дешёвые</option>
                   <option value="expensive">Сначала дорогие</option>
                   <option value="popular">Сначала популярные</option>
                 </select>
@@ -228,41 +228,43 @@
                 </p>
               </li>
             </ul>
-            <button class="button show-more-button" type="button">Загрузить еще</button>
-            <ul class="pagination">
-              <li class="pagination-item">
-                <a class="pagination-link pagination-link-current" href="#">1</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">2</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">3</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">4</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">...</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">10</a>
-              </li>
-            </ul>
-            <form class="cards-on-page" action="https://echo.htmlacademy.ru/" method="get">
-              <label class="cards-on-page-title" for="numbers-cards">Гостиниц на странице</label>
-                <select class="select-control" id="numbers-cards" name="numbers-cards">
-                  <option value="4" selected>4</option>
-                  <option value="8">8</option>
-                  <option value="16">16</option>
-                </select>
-              <button class="visually-hidden" type="submit">Показать.</button>
-            </form>
+            <button class="button show-more-button" type="button">Загрузить ещё</button>
+            <div class="pagination-container">
+              <ul class="pagination">
+                <li class="pagination-item">
+                  <a class="pagination-link pagination-link-current" href="#">1</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">2</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">3</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">4</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">...</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">10</a>
+                </li>
+              </ul>
+              <form class="cards-on-page" action="https://echo.htmlacademy.ru/" method="get">
+                <label class="cards-on-page-title" for="numbers-cards">Гостиниц на странице</label>
+                  <select class="select-control" id="numbers-cards" name="numbers-cards">
+                    <option value="4" selected>4</option>
+                    <option value="8">8</option>
+                    <option value="16">16</option>
+                  </select>
+                <button class="visually-hidden" type="submit">Показать.</button>
+              </form>
+            </div>
           </section>
           <section class="subscribe-catalog">
             <h2 class="subscribe-catalog-title">Подпишитесь на рассылку</h2>
-            <p class="subscribe-catalog-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-            <form action="https://echo.htmlacademy.ru/" method="post">
+            <p class="subscribe-catalog-description">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
+            <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
               <label for="subscribe-email">
                 <span class="visually-hidden">Подписка на рассылку.</span>
               </label>
