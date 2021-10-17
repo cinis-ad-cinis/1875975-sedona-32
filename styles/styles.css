@@ -62,6 +62,10 @@ body {
   margin: 0 auto;
 }
 
+.page-header {
+  position: relative;
+}
+
 .main-nav {
   display: flex;
   width: 1200px;
@@ -100,6 +104,7 @@ body {
 
 .logo {
   margin: 0 auto;
+  margin-bottom: -6px;
 }
 
 .navigation-user {
@@ -130,7 +135,6 @@ body {
 }
 
 .first-screen {
-  width: 1200px;
   padding-top: 51px;
   padding-bottom: 82px;
   background-color: #add8e6;
@@ -169,7 +173,6 @@ body {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  width: 1200px;
   margin: 0;
   padding: 0;
 }
@@ -228,7 +231,6 @@ body {
 }
 
 .search-hotel {
-  width: 1200px;
   padding: 91px 240px;
   text-align: center;
   box-sizing: border-box;
@@ -264,7 +266,6 @@ body {
 }
 
 .subscribe {
-  width: 1200px;
   padding: 94px 200px;
   text-align: center;
   color: #ffffff;
@@ -299,7 +300,7 @@ body {
   width: 600px;
   height: 60px;
   padding-left: 22px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border: none;
   border-radius: 10px 0 0 10px;
   box-sizing: border-box;
@@ -362,7 +363,6 @@ body {
 /*Каталог*/
 
 .catalog-background {
-  width: 1200px;
   color: #ffffff;
   background-color: #87ceeb;
   background-image: url("../img/catalog-background.jpeg");
@@ -439,7 +439,6 @@ body {
 
 .sorting-container {
   display: flex;
-  width: 1200px;
   padding: 71px;
   padding-top: 44px;
   padding-bottom: 42px;
@@ -470,7 +469,6 @@ body {
 .hotels-list {
   display: flex;
   flex-direction: column;
-  width: 1200px;
   margin: 0;
   margin-bottom: 61px;
   padding: 0 72px;
@@ -564,7 +562,6 @@ body {
 }
 
 .subscribe-catalog {
-  width: 1200px;
   padding: 0 200px;
   margin-bottom: 137px;
   text-align: center;
