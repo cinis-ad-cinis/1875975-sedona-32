@@ -781,6 +781,12 @@ img {
   background-color: #68a2ca;
 }
 
+.subscribe-button:disabled,
+.subscribe-button:disabled:hover {
+  color: #e7e7e7;
+  background-color: #595959;
+}
+
 .page-footer-container {
   display: flex;
   width: 1200px;
@@ -1244,6 +1250,12 @@ input[type="number"] {
 .button-submit:active {
   color: rgba(255, 255, 255, 0.3);
   outline: none;
+}
+
+.button-submit:disabled,
+.button-submit:disabled:hover {
+  color: #e7e7e7;
+  background-color: #595959;
 }
 
 .button-reset {
@@ -2094,4 +2106,10 @@ input[type="number"] {
 .modal-form-button:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #68a2ca;
+}
+
+.modal-form-button:disabled,
+.modal-form-button:disabled:hover {
+  color: #e7e7e7;
+  background-color: #595959;
 }
