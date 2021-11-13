@@ -203,7 +203,7 @@ img {
   fill: #756257;
 }
 
-.main-nav-link:focus .navigation-icon {
+.main-nav-link:focus-visible .navigation-icon {
   fill: #756257;
 }
 
@@ -212,8 +212,8 @@ img {
 }
 
 .favourites-icon::after {
-  position: absolute;
   content: "12";
+  position: absolute;
   top: 14px;
   right: 252px;
   width: 19px;
@@ -383,7 +383,7 @@ img {
   outline: none;
 }
 
-.button-delete:focus .delete-icon {
+.button-delete:focus-visible .delete-icon {
   fill: #000000;
 }
 
@@ -955,8 +955,8 @@ img {
 }
 
 .breadcrumbs-item + .breadcrumbs-item::before {
-  position: absolute;
   content: "";
+  position: absolute;
   top: 50%;
   left: -8px;
   margin-top: -4px;
@@ -1053,12 +1053,12 @@ img {
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
+  content: "";
   position: absolute;
   top: 50%;
   margin-top: -5px;
   left: 50%;
   margin-left: -6px;
-  content: "";
   width: 13px;
   height: 10px;
   background-image: url("../img/checkbox.svg");
@@ -1280,7 +1280,9 @@ input[type="number"] {
 }
 
 .select-control {
+  height: 48px;
   padding: 0;
+  text-indent: -1px;
   font: inherit;
   line-height: 23px;
   border: 2px solid #e6e6e6;
@@ -1644,8 +1646,8 @@ input[type="number"] {
 }
 
 .pagination-container::before {
-  position: absolute;
   content: "";
+  position: absolute;
   top: 0;
   width: 1056px;
   height: 1px;
@@ -1716,7 +1718,6 @@ input[type="number"] {
 
 .numbers-cards {
   min-width: 160px;
-  margin: 0;
   padding: 11px 50px 10px 15px;
 }
 
