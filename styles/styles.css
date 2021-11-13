@@ -2009,9 +2009,9 @@ input[type="number"] {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
-/* .modal-container-close {
+.modal-container-close {
   display: none;
-} */
+}
 
 .modal {
   position: relative;
@@ -2360,11 +2360,23 @@ input[type="number"] {
   background-color: #68a2ca;
 }
 
+.modal-form-button:focus {
+  background-color: #68a2ca;
+  border: none;
+  box-shadow: 0 0 0 3px #756257;
+  outline: none;
+}
+
+.modal-form-button:focus:not(:focus-visible) {
+  background-color: #83b3d3;
+  box-shadow: none;
+}
+
 .modal-form-button:focus-visible {
   background-color: #68a2ca;
   border: none;
-  outline: 3px solid #756257;
-  outline-offset: 0;
+  box-shadow: 0 0 0 3px #756257;
+  outline: none;
 }
 
 .modal-form-button:active {
