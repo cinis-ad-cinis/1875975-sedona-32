@@ -257,11 +257,9 @@ img {
 
 /* Поповер */
 
-/* .favourites-icon:hover .popover{
+.favourites-icon:hover .popover {
   display: block;
 }
-Вариант отображения по наведению на иконку */
-
 
 .popover-open {
   display: block;
