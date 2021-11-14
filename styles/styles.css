@@ -1304,6 +1304,8 @@ input[type="number"] {
 
 .range-bar {
   position: absolute;
+  left: 0;
+  width: 227px;
   height: 4px;
   background-color: #ffffff;
 }
